@@ -1,0 +1,66 @@
+<script>
+var sample =function(){
+	var a=10;
+	var b=20;
+	function hap(){
+		return a + b;
+	}
+	console . log(hap());
+}
+
+
+
+
+
+
+	console.log(this);//window
+	function test(){
+		console.log(this);//window
+	}
+	this();
+	var obj={
+		a:'A'
+		b:'B'
+		c:function(){
+			console.log(this);//obj
+		}
+		addClass:function(src){
+		
+		}
+		//객체 만들기
+		//Link 객체
+		var obj ={
+			arr:[1,2,3]
+			join:function(){
+				return
+			}
+		}
+	}
+	//2.object()를 통해서 생성
+	var obj2 =new object();
+	
+	
+	//3. 
+
+
+console.clear();
+var Car = function(){
+	this.a='A'
+	this.b='B'
+	Car.prototype .drive= function(){
+		console.log
+	}
+}
+
+var myCar = new Car();
+myCar.name='붕붕이';
+
+var myCar2= new Car();
+myCar2.name='봉봉이';
+
+console.log(myCar.name,myCar2.name)
+console.log(Car);
+
+
+
+</script>

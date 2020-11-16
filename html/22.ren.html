@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>REM/EM/%/px/vw/vh</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<style>
+		body div{border:5px solid blue; margin:16px;}
+		.px{width:300px ;font-size:1rem}
+		.em{width:20em ;font-size: 1.75em}
+
+		.rem{width:20rem;font-size:0.75rem }
+		.vw{width:20vw ;font-size:0.5rem}
+		.vh{width:20vh ;font-size:1.5rem}
+		.pct{width:30% ;font-size: 1.75rem}
+
+		.prd{font-size:1rem}
+		.prd > .title{font-size:1.5em ; line-height:1em}
+		.prd > .price{font-size:1.25em}
+
+		@media screen and(max-width:991px ){
+			html,body {width:24px;}
+		}
+		@media screen and(max-width:768px ){
+			html,body {width:16px;}
+		}
+		@media screen and(max-width:576px ){
+			html,body {width:12px;}
+		}
+		
+	</style>
+</head>
+<body>
+	<!-- 
+		1.절대값 px, rem/em
+		2.상대값 vw vh(브라우저 기준) % em 
+
+	 -->
+	 <ul class="prd">
+		 <div class="title">좋은상품</div>
+		 <div class="price">1000</div>
+	 </ul>
+	 <div class="px">가나다라(px)</div>
+	 <div class="rem">가나다라(rem)</div>
+	 <footer style="width: 50%; border: 1px solid red"> 
+	 <div class="vw">가나다라(vw)</div>
+	 </footer>
+	<footer style="width: 50%; border: 1px solid red"> 
+		<div class="pct">가나다라(pct)</div>
+	</footer>
+	 <div class="vh">가나다라(vh)</div>
+	 <div class="em">가나다라(em)</div>
+</body>
+</html>
